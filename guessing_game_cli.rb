@@ -11,8 +11,8 @@ end
  
 def run_guessing_game
     random = get_random
-    guess = user_guess.to_i
-    if guess == random
+    guess = user_guess
+    if guess.to_i == random
         puts "You guessed the correct number!"
     elsif guess == "exit"
         puts "Goodbye!"    
